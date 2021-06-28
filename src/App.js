@@ -1,7 +1,8 @@
-import "./App.css";
+import './App.css';
+import ROUTES, { RenderRoutes } from './routes';
 
 function App() {
-  return <a>a</a>;
+	return <RenderRoutes routes={ROUTES} />;
 }
 
 export default App;
