@@ -9,9 +9,11 @@ import JobsRoutes from "./jobs-routes";
 import CheckoutRoutes from "./checkout-routes";
 
 import HomePage from "../pages/home-page";
+import SamplePage from "../pages/sample";
 
 const ROUTES = [
   { path: "/", key: "ROOT", exact: true, component: HomePage },
+  { path: "/sample", key: "SAMPLE", exact: true, component: SamplePage },
   AuthRoutes,
   ProfileRoutes,
   AccountSettingRoutes,
