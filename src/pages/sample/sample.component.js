@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import {
+  selectIsValid,
   selectNumberValue,
   selectStringValue,
 } from "../../redux/sample/sample.selectors";
@@ -12,14 +13,18 @@ const SamplePage = () => {
   const dispatch = useDispatch();
   const stringValue = useSelector(selectStringValue);
   const numberValue = useSelector(selectNumberValue);
+  const isValid = useSelector(selectIsValid);
 
   const [values, setValues] = useState({
     stringValue,
     numberValue,
+    isValid,
   });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+
+    console.log(typeof value);
 
     setValues({
       ...values,
@@ -27,8 +32,8 @@ const SamplePage = () => {
     });
   };
 
-  const submitStringValue = (event) => {
-    event.preventDefault();
+  const submitStringValue = (e) => {
+    e.preventDefault();
 
     dispatch({
       type: sampleActions.submitStringValue.type,
@@ -70,7 +75,7 @@ const SamplePage = () => {
               value={values.stringValue}
               onChange={handleChange}
             />
-            <button>Submit String</button>
+            <button type="submit">Submit String</button>
           </form>
         </div>
       </div>
