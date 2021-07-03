@@ -1,5 +1,7 @@
 import React from "react";
 
-const Footer = () => <div className="footer">© Art Market.</div>;
+const Footer = () => {
+  return <div>© Art Market.</div>;
+};
 
 export default Footer;
