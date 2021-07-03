@@ -1,14 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const sampleSlice = createSlice({
-  name: "sample",
+  name: "sample2",
   // set initial state
   initialState: {
     stringValue: "",
     numberValue: 0,
+    isValid: false,
   },
   // define actions
   reducers: {
+    toggleIsValid: (state) => {
+      state.isValid = !state.isValid;
+    },
     increment: (state) => {
       state.numberValue += 1;
     },
