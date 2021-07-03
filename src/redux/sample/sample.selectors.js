@@ -1,6 +1,6 @@
 import { createDraftSafeSelector } from "@reduxjs/toolkit";
 
-const selectSample = (state) => state.sample;
+const selectSample = (state) => state.sample3;
 
 export const selectStringValue = createDraftSafeSelector(
   selectSample,
@@ -10,4 +10,9 @@ export const selectStringValue = createDraftSafeSelector(
 export const selectNumberValue = createDraftSafeSelector(
   selectSample,
   (sample) => sample.numberValue,
+);
+
+export const selectIsValid = createDraftSafeSelector(
+  selectSample,
+  (sample) => sample.isValid,
 );

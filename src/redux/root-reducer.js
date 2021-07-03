@@ -19,7 +19,7 @@ const rootPersistConfig = {
 
 const rootReducer = combineReducers({
   // reducer_name: individualReducer (ex: boardReducer, reviewReducer, etc...)
-  sample: sampleReducer,
+  sample3: sampleReducer,
   // sample: persistReducer(samplePersistConfig, sampleReducer), // for nested persist config
 });
 
