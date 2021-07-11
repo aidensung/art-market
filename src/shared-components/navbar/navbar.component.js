@@ -13,6 +13,7 @@ import {
 	NavMenu,
 	Form,
 	Input,
+	Button,
 } from './navbarElement';
 
 const Navbar = (props) => {
@@ -26,7 +27,9 @@ const Navbar = (props) => {
 					</MobileIcon>
 					<Form>
 						<Input type="text" placeholder="Search" />
-						{/* <input type="submit" value="Submit" /> */}
+						<Button>
+							<FaSearch />
+						</Button>
 					</Form>
 					<NavMenu>
 						<NavItem>

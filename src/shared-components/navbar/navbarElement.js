@@ -119,14 +119,29 @@ export const Form = styled.form`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 50%;
+	margin-left: 30px;
 `;
 
 export const Input = styled.input`
 	padding: 0.5em;
 	margin: 0.5em;
-	width: 500px;
+	width: 100%;
 	color: black;
 	background: white;
 	border: none;
 	border-radius: 3px;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	} ;
+`;
+
+export const Button = styled.button`
+	font-size: 1.3rem;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	transform: translate(-30px, 2px);
 `;
