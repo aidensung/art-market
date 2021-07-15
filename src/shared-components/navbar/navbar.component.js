@@ -14,15 +14,15 @@ import {
 	Form,
 	Input,
 	Button,
-} from './navbarElement';
+} from './navbar.styles';
 
-const Navbar = (props) => {
+const Navbar = ({ toggle }) => {
 	return (
 		<>
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to="/">Art Market</NavLogo>
-					<MobileIcon>
+					<MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>
 					<Form>

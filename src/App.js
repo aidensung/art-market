@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import ROUTES, { RenderRoutes } from './routes/root-route';
 
@@ -7,10 +8,16 @@ import Navbar from './shared-components/navbar';
 import Sidebar from './shared-components/sidebar';
 
 function App() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
+
 	return (
 		<>
-			<Navbar />
-			<Sidebar />
+			<Navbar toggle={toggle} />
+			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Header />
 			<RenderRoutes routes={ROUTES} />
 			<Footer />

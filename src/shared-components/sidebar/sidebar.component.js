@@ -8,18 +8,18 @@ import {
 	SideBtnWarp,
 	SidebarRoute,
 	SidebarMenu,
-} from './sidebarElements';
+} from './sidebar.styles.';
 
-const Sidebar = (props) => {
+const Sidebar = ({ isOpen, toggle }) => {
 	return (
-		<SidebarContainer>
-			<Icon>
+		<SidebarContainer isOpen={isOpen} onClick={toggle}>
+			<Icon onClick={toggle}>
 				<CloseIcon />
 			</Icon>
 			<SidebarWrapper>
 				<SidebarMenu>
-					<SidebarLink to="about">Category</SidebarLink>
-					<SidebarLink to="about">Location</SidebarLink>
+					<SidebarLink to="#">Category</SidebarLink>
+					<SidebarLink to="#">Location</SidebarLink>
 				</SidebarMenu>
 				<SideBtnWarp>
 					<SidebarRoute to="/signin">Sign In</SidebarRoute>
