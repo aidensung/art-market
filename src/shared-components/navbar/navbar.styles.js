@@ -121,6 +121,10 @@ export const Form = styled.form`
 	align-items: center;
 	width: 50%;
 	margin-left: 30px;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	} ;
 `;
 
 export const Input = styled.input`
@@ -131,10 +135,6 @@ export const Input = styled.input`
 	background: white;
 	border: none;
 	border-radius: 3px;
-
-	@media screen and (max-width: 768px) {
-		display: none;
-	} ;
 `;
 
 export const Button = styled.button`
