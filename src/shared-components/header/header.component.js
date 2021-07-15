@@ -10,13 +10,12 @@ import {
 	SubA,
 } from "./header.styles";
 
-const handleClick = (action) => {
-	if (!action) return;
-
-	if (this.props.onClick) this.props.onClick(action);
-};
-
 const Header = (props) => {
+	const handleClick = (action) => {
+		if (!action) return;
+
+		if (this.props.onClick) this.props.onClick(action);
+	};
 	return (
 		<StyledUl>
 			<DropDownLi>
