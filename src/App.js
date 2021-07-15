@@ -9,53 +9,7 @@ function App() {
 		<>
 			<Navbar />
 			<Header />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
-			<RenderRoutes routes={ROUTES} />
+
 			<RenderRoutes routes={ROUTES} />
 
 			<Footer />
