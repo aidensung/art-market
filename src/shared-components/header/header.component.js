@@ -1,11 +1,53 @@
 import React from "react";
 
-// import Logo from "../../assets/artmarket.png";
+import {
+	StyledUl,
+	// StyledLi,
+	// StyledA,
+	Dropbtn,
+	DropDownContent,
+	DropDownLi,
+	SubA,
+} from "./header.styles";
 
-// import { HeaderContainer, LogoContainer } from "./header.styles.js";
+const handleClick = (action) => {
+	if (!action) return;
 
-const Header = () => {
-  return <div>Header</div>;
+	if (this.props.onClick) this.props.onClick(action);
+};
+
+const Header = (props) => {
+	return (
+		<StyledUl>
+			<DropDownLi>
+				<Dropbtn onClick={() => handleClick("DropDown")}>ARTS</Dropbtn>
+				<DropDownContent>
+					{" "}
+					<SubA onClick={() => handleClick("Link1")}>Link 1</SubA>
+					<SubA onClick={() => handleClick("Link2")}>Link 2</SubA>
+					<SubA onClick={() => handleClick("Link3")}>Link 3</SubA>
+				</DropDownContent>
+			</DropDownLi>
+			<DropDownLi>
+				<Dropbtn onClick={() => handleClick("DropDown")}>JOBS</Dropbtn>
+				<DropDownContent>
+					{" "}
+					<SubA onClick={() => handleClick("Link1")}>Link 1</SubA>
+					<SubA onClick={() => handleClick("Link2")}>Link 2</SubA>
+					<SubA onClick={() => handleClick("Link3")}>Link 3</SubA>
+				</DropDownContent>
+			</DropDownLi>
+			<DropDownLi>
+				<Dropbtn onClick={() => handleClick("DropDown")}>SHOP</Dropbtn>
+				<DropDownContent>
+					{" "}
+					<SubA onClick={() => handleClick("Link1")}>Link 1</SubA>
+					<SubA onClick={() => handleClick("Link2")}>Link 2</SubA>
+					<SubA onClick={() => handleClick("Link3")}>Link 3</SubA>
+				</DropDownContent>
+			</DropDownLi>
+		</StyledUl>
+	);
 };
 
 export default Header;
