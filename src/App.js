@@ -8,10 +8,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Header />
-
-			<RenderRoutes routes={ROUTES} />
-
+			<Header />	
 			<Footer />
 		</>
 	);
