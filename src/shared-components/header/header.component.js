@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
 	StyledUl,
@@ -8,41 +8,43 @@ import {
 	DropDownContent,
 	DropDownLi,
 	SubA,
-} from "./header.styles";
+} from './header.styles';
 
 const Header = (props) => {
+	const { onClick } = props;
+
 	const handleClick = (action) => {
 		if (!action) return;
 
-		if (this.props.onClick) this.props.onClick(action);
+		if (onClick) onClick(action);
 	};
 	return (
 		<StyledUl>
 			<DropDownLi>
-				<Dropbtn onClick={() => handleClick("DropDown")}>ARTS</Dropbtn>
+				<Dropbtn onClick={() => handleClick('DropDown')}>ARTS</Dropbtn>
 				<DropDownContent>
-					{" "}
-					<SubA onClick={() => handleClick("Link1")}>Link 1</SubA>
-					<SubA onClick={() => handleClick("Link2")}>Link 2</SubA>
-					<SubA onClick={() => handleClick("Link3")}>Link 3</SubA>
+					{' '}
+					<SubA onClick={() => handleClick('Link1')}>Link 1</SubA>
+					<SubA onClick={() => handleClick('Link2')}>Link 2</SubA>
+					<SubA onClick={() => handleClick('Link3')}>Link 3</SubA>
 				</DropDownContent>
 			</DropDownLi>
 			<DropDownLi>
-				<Dropbtn onClick={() => handleClick("DropDown")}>JOBS</Dropbtn>
+				<Dropbtn onClick={() => handleClick('DropDown')}>JOBS</Dropbtn>
 				<DropDownContent>
-					{" "}
-					<SubA onClick={() => handleClick("Link1")}>Link 1</SubA>
-					<SubA onClick={() => handleClick("Link2")}>Link 2</SubA>
-					<SubA onClick={() => handleClick("Link3")}>Link 3</SubA>
+					{' '}
+					<SubA onClick={() => handleClick('Link1')}>Link 1</SubA>
+					<SubA onClick={() => handleClick('Link2')}>Link 2</SubA>
+					<SubA onClick={() => handleClick('Link3')}>Link 3</SubA>
 				</DropDownContent>
 			</DropDownLi>
 			<DropDownLi>
-				<Dropbtn onClick={() => handleClick("DropDown")}>SHOP</Dropbtn>
+				<Dropbtn onClick={() => handleClick('DropDown')}>SHOP</Dropbtn>
 				<DropDownContent>
-					{" "}
-					<SubA onClick={() => handleClick("Link1")}>Link 1</SubA>
-					<SubA onClick={() => handleClick("Link2")}>Link 2</SubA>
-					<SubA onClick={() => handleClick("Link3")}>Link 3</SubA>
+					{' '}
+					<SubA onClick={() => handleClick('Link1')}>Link 1</SubA>
+					<SubA onClick={() => handleClick('Link2')}>Link 2</SubA>
+					<SubA onClick={() => handleClick('Link3')}>Link 3</SubA>
 				</DropDownContent>
 			</DropDownLi>
 		</StyledUl>
