@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
 	max-width: 380px;
 	margin: 10px;
 	height: 380px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 6px 5px 19px -2px rgba(0, 0, 0, 0.31);
 `;
 
 export const CardHeader = styled.div`

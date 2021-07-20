@@ -12,6 +12,7 @@ export const ArtworksHeader = styled.section`
 	justify-content: space-between;
 	margin-bottom: 2px;
 	margin-top: 60px;
+	box-shadow: 0 4px 6px -6px #222;
 `;
 
 export const IconLeftContainer = styled.div`

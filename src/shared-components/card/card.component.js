@@ -3,9 +3,6 @@ import React from 'react';
 import {
 	CardContainer,
 	CardHeader,
-	CardProfile,
-	CardSpan,
-	CardTitleGroup,
 	CardTitle,
 	CardImg,
 	CardPrice,
@@ -13,7 +10,6 @@ import {
 } from './card.styles';
 
 const Card = ({ items }) => {
-	console.log(items);
 	return (
 		<CardContainer>
 			<CardImg src={items.imageURL} alt={items.title} />

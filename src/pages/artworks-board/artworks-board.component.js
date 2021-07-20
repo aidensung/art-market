@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../../shared-components/card';
+import List from '../../shared-components/list';
 
 import {
 	ArtworksHeader,
@@ -30,7 +31,8 @@ const ArtworksBoard = (props) => {
 			id: 2,
 			artist: 'Grace2',
 			title: 'Artwork2',
-			description: 'This is amazing',
+			description:
+				'This is amazing painting. You are gonna love it! This is amazing painting. You are gonna love it!',
 			date: 'Jul 23',
 			price: '1200$',
 			imageURL:
@@ -67,7 +69,6 @@ const ArtworksBoard = (props) => {
 					</Icon>
 				</IconRrightContainer>
 			</ArtworksHeader>
-			<hr />
 			{isGalleryView ? (
 				<Section>
 					{items.map((item) => (
@@ -75,7 +76,11 @@ const ArtworksBoard = (props) => {
 					))}
 				</Section>
 			) : (
-				<h1>List</h1>
+				<Section>
+					{items.map((item) => (
+						<List items={item} />
+					))}
+				</Section>
 			)}
 		</>
 	);
