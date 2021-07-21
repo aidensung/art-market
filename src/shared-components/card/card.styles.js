@@ -1,8 +1,11 @@
+import { FaMapMarkerAlt } from 'react-icons/fa';
+
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-self: start;
 	color: black;
 	padding: 20px;
 	border-radius: 10px;
@@ -12,8 +15,9 @@ export const CardContainer = styled.div`
 	transition: 200ms;
 	max-width: 380px;
 	margin: 10px;
-	height: 380px;
+	height: 420px;
 	box-shadow: 6px 5px 19px -2px rgba(0, 0, 0, 0.31);
+	position: relative;
 `;
 
 export const CardHeader = styled.div`
@@ -43,4 +47,25 @@ export const CardPrice = styled.span`
 export const CardText = styled.p`
 	margin: 5px;
 	font-size: small;
+`;
+
+export const Location = styled.div`
+	position: absolute;
+	bottom: 5px;
+	display: flex;
+	align-items: center;
+`;
+
+export const LocationText = styled.div`
+	font-size: small;
+`;
+
+export const Icon = styled.span`
+	font-size: 1.4rem;
+	outline: none;
+	transform: translateY(2px);
+`;
+
+export const LocationIcon = styled(FaMapMarkerAlt)`
+	color: black;
 `;
