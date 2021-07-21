@@ -7,6 +7,10 @@ import {
 	CardImg,
 	CardPrice,
 	CardText,
+	Icon,
+	LocationIcon,
+	LocationText,
+	Location,
 } from './card.styles';
 
 const Card = ({ items }) => {
@@ -18,6 +22,12 @@ const Card = ({ items }) => {
 				<CardPrice>{items.price}</CardPrice>
 			</CardHeader>
 			<CardText>{items.description}</CardText>
+			<Location>
+				<Icon>
+					<LocationIcon />
+				</Icon>
+				<LocationText>{items.location}</LocationText>
+			</Location>
 		</CardContainer>
 	);
 };
