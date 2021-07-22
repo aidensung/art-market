@@ -4,13 +4,10 @@ export const StyledUl = styled.ul`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: auto;
+	top: 80px;
 	width: 100%;
-	position: fixed;
-	font-size: 1rem;
-	z-index: 1;
-	margin: 100;
-	top: 5;
-	padding-top: 100;
+	position: sticky;
 	background-color: #000;
 `;
 
@@ -30,7 +27,8 @@ export const DropDownContent = styled.div`
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
+	left: 0;
+	width: 100%;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 `;
@@ -56,9 +54,22 @@ export const StyledA = styled.a`
 	}
 `;
 
-export const SubA = styled.a`
+export const SubA = styled.div`
+	float: left;
+	width: 33.33%;
 	color: black;
-	padding: 12px 16px;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+	&:hover {
+		background-color: #f1f1f1;
+	}
+`;
+
+export const SubB = styled.a`
+	float: none;
+	color: black;
+	padding: 16px;
 	text-decoration: none;
 	display: block;
 	text-align: left;

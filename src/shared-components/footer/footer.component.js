@@ -11,11 +11,14 @@ import {
 const Footer = () => {
 	return (
 		<Box>
-			<h1 style={{ color: "green", textAlign: "center", marginTop: "-60px" }}>
-				Art Market(image)
-			</h1>
 			<Container>
 				<Row>
+					<Column>
+						<Heading>Art Market</Heading>
+						<FooterLink href="/artworks">Arts</FooterLink>
+						<FooterLink href="/jobs">Jobs</FooterLink>
+						<FooterLink href="/shop">Shop</FooterLink>
+					</Column>
 					<Column>
 						<Heading>About</Heading>
 						<FooterLink href="#">About us</FooterLink>
@@ -28,11 +31,6 @@ const Footer = () => {
 						<FooterLink href="#">Service</FooterLink>
 						<FooterLink href="#">Art</FooterLink>
 						<FooterLink href="#">Update</FooterLink>
-					</Column>
-					<Column>
-						<Heading>More</Heading>
-						<FooterLink href="#">Shop</FooterLink>
-						<FooterLink href="#">Jobs</FooterLink>
 					</Column>
 					<Column>
 						<Heading>Social Media</Heading>
