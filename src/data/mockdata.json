@@ -1,0 +1,66 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "category": "Painting"
+    },
+    {
+      "id": 2,
+      "category": "Photography"
+    },
+    {
+      "id": 3,
+      "category": "Design"
+    },
+    {
+      "id": 4,
+      "category": "Music"
+    },
+    {
+      "id": 5,
+      "category": "Sculpture"
+    },
+    {
+      "id": 6,
+      "category": "Prints"
+    }
+  ],
+    "paintingcategory": [
+    {
+      "id": 1,
+      "category": "Acrylic"
+    },
+    {
+      "id": 2,
+      "category": "Oil"
+    },
+    {
+      "id": 3,
+      "category": "Watercolour"
+    },
+    {
+      "id": 4,
+      "category": "Mixed"
+    },
+    {
+      "id": 5,
+      "category": "Ink"
+    },
+    {
+      "id": 6,
+      "category": "Combination"
+    },
+    {
+      "id": 7,
+      "category": "Gouache"
+    },
+    {
+      "id": 8,
+      "category": "Spray Paint"
+    },
+    {
+      "id": 9,
+      "category": "Encaustics"
+    }
+  ]
+}
