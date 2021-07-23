@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link as LinkRouter } from "react-router-dom";
 
-export const StyledUl = styled.ul`
+export const HeaderDiv = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,13 +10,18 @@ export const StyledUl = styled.ul`
 	width: 100%;
 	position: sticky;
 	background-color: #000;
+	z-index: 10;
+`;
+export const HeaderMenuUl = styled.ul`
+	color: #fff;
 `;
 
-export const StyledLi = styled.li`
+export const HeaderLi = styled.li`
 	float: left;
+	list-style-type: none;
 `;
 
-export const Dropbtn = styled.div`
+export const DropDownbtn = styled.button`
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -33,9 +39,9 @@ export const DropDownContent = styled.div`
 	z-index: 1;
 `;
 
-export const DropDownLi = styled(StyledLi)`
+export const DropDownLi = styled(HeaderLi)`
 	display: inline-block;
-	&:hover {
+	&:touch-action {
 		background-color: red;
 	}
 	&:hover ${DropDownContent} {
@@ -43,7 +49,7 @@ export const DropDownLi = styled(StyledLi)`
 	}
 `;
 
-export const StyledA = styled.a`
+export const HeaderA = styled(LinkRouter)`
 	display: inline-block;
 	color: white;
 	text-align: center;

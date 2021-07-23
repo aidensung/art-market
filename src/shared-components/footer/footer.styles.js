@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkRouter } from "react-router-dom";
 
 export const Box = styled.div`
 	background: black;
@@ -16,7 +17,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 0 auto;
 	margin-bottom: auto;
 	/* background: red; */
@@ -25,8 +26,8 @@ export const Container = styled.div`
 export const Column = styled.div`
 	display: flex;
 	flex-direction: column;
-	text-align: left;
-	margin-left: 60px;
+	text-align: right;
+	align-content: center;
 `;
 
 export const Row = styled.div`
@@ -49,6 +50,13 @@ export const FooterLink = styled.a`
 		color: green;
 		transition: 200ms ease-in;
 	}
+`;
+
+export const FooterA = styled(LinkRouter)`
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 15px;
+	text-decoration: none;
 `;
 
 export const Heading = styled.p`

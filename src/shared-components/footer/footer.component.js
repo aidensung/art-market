@@ -5,6 +5,7 @@ import {
 	Row,
 	Column,
 	FooterLink,
+	FooterA,
 	Heading,
 } from "./footer.styles.js";
 
@@ -15,22 +16,15 @@ const Footer = () => {
 				<Row>
 					<Column>
 						<Heading>Art Market</Heading>
-						<FooterLink href="/artworks">Arts</FooterLink>
-						<FooterLink href="/jobs">Jobs</FooterLink>
-						<FooterLink href="/shop">Shop</FooterLink>
+						<FooterA to="/artworks">Arts</FooterA>
+						<FooterA to="/jobs">Jobs</FooterA>
+						<FooterA to="/shop">Shop</FooterA>
 					</Column>
 					<Column>
 						<Heading>About</Heading>
-						<FooterLink href="#">About us</FooterLink>
-						<FooterLink href="#">Careers</FooterLink>
-						<FooterLink href="#">Contact us</FooterLink>
-					</Column>
-					<Column>
-						<Heading>News</Heading>
-						<FooterLink href="#">Magazine</FooterLink>
-						<FooterLink href="#">Service</FooterLink>
-						<FooterLink href="#">Art</FooterLink>
-						<FooterLink href="#">Update</FooterLink>
+						<FooterA to="/about">About us</FooterA>
+						<FooterA to="/careers">Careers</FooterA>
+						<FooterA to="/contact">Contact us</FooterA>
 					</Column>
 					<Column>
 						<Heading>Social Media</Heading>
