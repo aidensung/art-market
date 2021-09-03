@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Card from '../../shared-components/card';
-import List from '../../shared-components/list';
+import List from '../../shared-components/artwork-list';
 import {
 	ArtworksHeader,
 	FilterIcon,
@@ -16,6 +15,7 @@ import {
 } from './artworks-board.styles';
 
 import items from '../../data/dummy_artworks';
+import ArtworkItem from '../../shared-components/artwork-gallery';
 
 const ArtworksBoard = (props) => {
 	const [isGalleryView, setIsGalleryView] = useState(true);
@@ -51,7 +51,7 @@ const ArtworksBoard = (props) => {
 			{isGalleryView ? (
 				<Section>
 					{items.map((item) => (
-						<Card items={item} />
+						<ArtworkItem items={item} />
 					))}
 				</Section>
 			) : (
